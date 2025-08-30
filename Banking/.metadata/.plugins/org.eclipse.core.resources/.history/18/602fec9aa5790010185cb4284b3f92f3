@@ -1,0 +1,5 @@
+package com.example.gani.client.dto;
+
+public class NotificationRequest {
+
+}

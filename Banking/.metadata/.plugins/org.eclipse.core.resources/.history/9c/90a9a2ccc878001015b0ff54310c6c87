@@ -1,0 +1,28 @@
+package com.bank.account.controller;
+
+import com.bank.account.entity.Account;
+import com.bank.account.service.AccountService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.*;
+import org.springframework.web.bind.annotation.*;
+
+import javax.validation.Valid;
+import java.util.List;
+
+@RestController
+@RequestMapping("/api/accounts")
+public class AccountController {
+
+    @Autowired
+    private AccountService accountService;
+
+    @PostMapping
+    public ResponseEntity<Account> createAccount(@Valid @RequestBody Account account) {
+        return new ResponseEntity<>(accountService.create(account), HttpStatus.CREATED);
+    }
+
+    @GetMapping
+    public ResponseEntity<List<Account>> getAllAccounts() {
+        return ResponseEntity.ok(accountService.getAll());
+    }
+}

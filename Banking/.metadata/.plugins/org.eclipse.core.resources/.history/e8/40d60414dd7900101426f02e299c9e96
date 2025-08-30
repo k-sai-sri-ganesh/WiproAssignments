@@ -1,0 +1,22 @@
+{"properties": [
+  {
+    "name": "spring.cloud.config.import",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.cloud.config.import'"
+  },
+  {
+    "name": "management.tracing.enabled",
+    "type": "java.lang.String",
+    "description": "A description for 'management.tracing.enabled'"
+  },
+  {
+    "name": "management.tracing.zipkin.endpoint",
+    "type": "java.lang.String",
+    "description": "A description for 'management.tracing.zipkin.endpoint'"
+  },
+  {
+    "name": "management.tracing.zipkin.enabled",
+    "type": "java.lang.String",
+    "description": "A description for 'management.tracing.zipkin.enabled'"
+  }
+]}

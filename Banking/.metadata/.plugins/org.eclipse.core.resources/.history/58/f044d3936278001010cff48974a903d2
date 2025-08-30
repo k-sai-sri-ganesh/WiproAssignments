@@ -1,0 +1,8 @@
+spring.application.name=Config-Server
+
+server.port=8888
+
+# File system location or Git repo
+spring.cloud.config.server.native.search-locations=file:///C:/config-repo
+
+spring.profiles.active=native

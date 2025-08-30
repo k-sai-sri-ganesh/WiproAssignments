@@ -1,0 +1,12 @@
+package com.example.gani.swagger;
+
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class SwaggerConfig {
+    @Bean
+    public OpenAPI transactionApi() {
+        return new OpenAPI()
+            .info(new Info().title("Transaction API").version("1.0"));
+    }
+}
